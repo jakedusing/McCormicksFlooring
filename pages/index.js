@@ -16,7 +16,7 @@ export default function Home() {
       <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-white">
+            <h1 className="text-xl font-burtons text-black dark:text-white">
               McCormick's Flooring
             </h1>
             <ul className="flex items-center">
@@ -40,7 +40,7 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-300 md:text-6xl">
               Mike McCormick
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+            <h3 className="text-2xl py-2 text-black dark:text-white md:text-3xl">
               Owner of McCormick's Flooring
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-md mx-auto">
