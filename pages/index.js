@@ -20,7 +20,7 @@ export default function Home() {
               McCormick's Flooring
             </h1>
             <ul className="flex items-center">
-              <li className="dark:text-white">
+              <li className="text-black dark:text-white">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer text-2xl"
