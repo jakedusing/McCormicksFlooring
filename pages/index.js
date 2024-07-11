@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { useState } from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonFill } from "react-icons/bs";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
+import Carousel from "./components/ExampleWork";
 import Image from "next/image";
 import mccormickflooring from "../public/mccormickflooring_nobg.png";
 import lvpIcon from "../public/lvp-icon_orig.png";
@@ -13,7 +14,7 @@ export default function Home() {
       <Head>
         <title>McCormick's Flooring</title>
       </Head>
-      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 overflow-hidden">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons text-black dark:text-white">
@@ -21,14 +22,14 @@ export default function Home() {
             </h1>
             <ul className="flex items-center">
               <li className="text-black dark:text-white">
-                <BsFillMoonStarsFill
+                <BsFillMoonFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer text-2xl"
                 />
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-200 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-200 text-white px-2 py-2 rounded-md ml-8"
                   href="mailto:mccormicksflooring@gmail.com"
                 >
                   Contact
@@ -83,7 +84,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <div></div>
+        <Carousel />
       </main>
     </div>
   );
