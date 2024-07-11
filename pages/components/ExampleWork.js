@@ -57,7 +57,7 @@ const Carousel = () => {
             <Image
               className="w-full h-full object-cover rounded-md transition"
               src={pic.url}
-              alt="/"
+              alt={`Slide ${index}`}
             />
           </div>
         );

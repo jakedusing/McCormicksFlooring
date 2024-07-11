@@ -85,6 +85,11 @@ export default function Home() {
           </div>
         </section>
         <Carousel />
+        <footer>
+          <div className="text-sm py-8 flex justify-center text-gray-600 dark:text-gray-300">
+            McCormick's Flooring, LLC. Since 2019
+          </div>
+        </footer>
       </main>
     </div>
   );
