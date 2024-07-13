@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import { BsFillMoonFill } from "react-icons/bs";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
-import Carousel from "./components/ExampleWork";
+import WorkImages from "./components/WorkImages";
 import Image from "next/image";
 import mccormickflooring from "../public/mccormickflooring_nobg.png";
 import lvpIcon from "../public/lvp-icon_orig.png";
@@ -29,7 +29,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-200 text-white px-2 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-gray-100 to-gray-500 text-white px-2 py-2 rounded-md ml-8"
                   href="mailto:mccormicksflooring@gmail.com"
                 >
                   Contact
@@ -38,7 +38,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-300 md:text-6xl">
+            <h2 className="text-5xl py-2 text-gray-600 font-medium dark:text-gray-500 md:text-6xl">
               Mike McCormick
             </h2>
             <h3 className="text-2xl py-2 text-black dark:text-white md:text-3xl">
@@ -68,7 +68,7 @@ export default function Home() {
               <AiFillInstagram />
             </a>
           </div>
-          <div className="relative bg-gradient-to-b from-teal-500 rounded-2xl w-80 h-80 mt-10 mx-auto dark:bg-gradient-to-b dark:from-gray-300 dark:to-gray-500">
+          <div className="relative bg-gradient-to-b from-gray-100 to-gray-300 rounded-2xl w-80 h-80 mt-10 mx-auto dark:bg-gradient-to-b dark:from-gray-300 dark:to-gray-500">
             <Image src={mccormickflooring} layout="fill" objectFit="cover" />
           </div>
         </section>
@@ -84,9 +84,14 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <Carousel />
+        <div>
+          <h3 className="flex flex-row justify-center pt-10 pb-3 text-2xl dark:text-gray-300">
+            Previous Work
+          </h3>
+          <WorkImages />
+        </div>
         <footer>
-          <div className="text-sm py-8 flex justify-center text-gray-600 dark:text-gray-300">
+          <div className="text-md text py-8 flex justify-center text-gray-600 dark:text-gray-300">
             McCormick's Flooring, LLC. Since 2019
           </div>
         </footer>
