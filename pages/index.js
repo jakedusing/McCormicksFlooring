@@ -24,12 +24,12 @@ export default function Home() {
               <li className="text-black dark:text-white">
                 <BsFillMoonFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl transition-transform transform hover:scale-110"
                 />
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-gray-100 to-gray-500 text-white px-2 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-4 py-2 rounded-md ml-8 hover:shadow-lg hover:scale-105 transition-all"
                   href="mailto:mccormicksflooring@gmail.com"
                 >
                   Contact
@@ -38,10 +38,10 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-gray-600 font-medium dark:text-gray-500 md:text-6xl">
+            <h2 className="text-6xl py-2 text-gray-600 font-medium dark:text-gray-500">
               Mike McCormick
             </h2>
-            <h3 className="text-2xl py-2 text-black dark:text-white md:text-3xl">
+            <h3 className="text-3xl py-2 text-black dark:text-white">
               Owner of McCormick's Flooring
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-md mx-auto">
@@ -54,16 +54,18 @@ export default function Home() {
               Quality work.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-12 py-1 text-gray-600 dark:text-gray-300">
+          <div className="flex justify-center gap-8 text-5xl text-gray-600 dark:text-gray-300">
             <a
               href="https://www.facebook.com/p/McCormicks-flooring-100063481025326/?_rdr"
               target="_blank"
+              className="transform transition-all hover:scale-125 hover:text-blue-600"
             >
               <AiFillFacebook />
             </a>
             <a
               href="https://www.instagram.com/tolyboi_staytru/"
               target="_blank"
+              className="transform transition-all hover:scale-125 hover:text-pink-500"
             >
               <AiFillInstagram />
             </a>
@@ -72,8 +74,8 @@ export default function Home() {
             <Image src={mccormickflooring} layout="fill" objectFit="cover" />
           </div>
         </section>
-        <section>
-          <div className="flex flex-col items-center text-center justify-center p-10 mt-10 shadow-lg rounded-xl md:max-w-lg mx-auto">
+        <section className="flex justify-center p-10 mt-10">
+          <div className="flex flex-col items-center text-center justify-center p-10 mt-10 shadow-lg rounded-xl bg-white dark:bg-gray-800 w-full md:max-w-lg mx-auto">
             <Image src={lvpIcon} width={100} height={100} />
             <h3 className="text-3xl py-1 dark:text-white">Services offered</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
@@ -90,8 +92,8 @@ export default function Home() {
           </h3>
           <WorkImages />
         </div>
-        <footer>
-          <div className="text-md text py-8 flex justify-center text-gray-600 dark:text-gray-300">
+        <footer className="py-8">
+          <div className="text-md text-center text-gray-600 dark:text-gray-300">
             McCormick's Flooring, LLC. Since 2019
           </div>
         </footer>
