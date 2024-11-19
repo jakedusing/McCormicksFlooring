@@ -10,7 +10,9 @@ import lvpIcon from "../public/lvp-icon_orig.png";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div
+      className={darkMode ? "dark transition-all duration-500 ease-in-out" : ""}
+    >
       <Head>
         <title>McCormick's Flooring</title>
       </Head>
